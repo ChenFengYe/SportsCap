@@ -1,5 +1,5 @@
 # SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Challenging Sports Videos
-### [ProjectPage](https://chenxin.tech/SportsCap.html) | [Paper](https://arxiv.org/abs/2104.11452) | [Video](https://chenxin.tech/files/Paper/IJCV2020_Sport/project_page_SportsCap/data/video.mp4) |  [Dataset](xx)
+### [ProjectPage](https://chenxin.tech/SportsCap.html) | [Paper](https://arxiv.org/abs/2104.11452) | [Video](https://chenxin.tech/files/Paper/IJCV2020_Sport/project_page_SportsCap/data/video.mp4) |  Dataset ([Part01](https://drive.google.com/file/d/1hUlGglrlWdjZNFFQh2ck3UaMDL8sDwQv/view?usp=sharing)|[Part02](https://drive.google.com/file/d/1NswiD-wpuAyHbSgdUCZ2s9QmVIFPcLjA/view?usp=sharing))
 [Xin Chen](https://chenxin.tech/), Anqi Pang, [Wei Yang](https://scholar.google.com/citations?user=fRjxdPgAAAAJ&hl=en), [Yuexin Ma](http://yuexinma.me/aboutme.html), [Lan Xu](http://xu-lan.com/), [Kun Zhou](http://kunzhou.net/), [Jingyi Yu](http://www.yu-jingyi.com/).</br>
 
 
@@ -19,7 +19,7 @@ Markerless motion capture and understanding of professional non-daily human move
 All material is made available under [Creative Commons BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) license. You can **use, redistribute, and adapt** the material for **non-commercial purposes**, as long as you give appropriate credit by **citing our paper** and **indicating any changes** that you've made.
 
 ## The SMART Dataset
-SportsCap proposes a challenging sports dataset called Sports Motion and Recognition Tasks (SMART) dataset, which contains per-frame action labels, manually annotated pose and action assessment of various challenging sports video clips from professional referees.
+SportsCap proposes a challenging sports dataset called Sports Motion and Recognition Tasks (SMART) dataset, which contains per-frame action labels, manually annotated pose, and action assessment of various challenging sports video clips from professional referees.
 
 <p float="left">
   <img src="./README/dataset.gif" width="800" />
@@ -29,26 +29,17 @@ SportsCap proposes a challenging sports dataset called Sports Motion and Recogni
 You can download the SMART dataset (17 GB, version 1.0) from the Google Drive [[SMART_part01](https://drive.google.com/file/d/1hUlGglrlWdjZNFFQh2ck3UaMDL8sDwQv/view?usp=sharing) | [SMART_part02](https://drive.google.com/file/d/1NswiD-wpuAyHbSgdUCZ2s9QmVIFPcLjA/view?usp=sharing)]. The SMART dataset includes source images (>60,000), annotations(>45,000, both pose and action), sport motion embedding spaces, videos (coming soon) and tools.
 
 ### Annotation
-Please load these json file in python to parse these annotations about 2D key-points of poses and fine-grained action labels.
+Please load these JSON files in python to parse these annotations about 2D key-points of poses and fine-grained action labels.
 ```
 Table_VideoInfo_diving.json
 Table_VideoInfo_gym.json
 Table_VideoInfo_polevalut_highjump_badminton.json
 ```
 ### Tools
-The tools folder includes serveral functions to load the annotation and calculate the pose variables. More useful scripts are comming soon.
+The tools folder includes several functions to load the annotation and calculate the pose variables. More useful scripts are coming soon.
 ```
 utils.py - json_load, crop_img_skes, cal_body_bbox ...
 ```
-<!-- The code consists of two modules, as mentioned in our paper, the learning module (image to mask) and the graphics module (mask to 3d mesh). The first module follows the framework of FCIS and Mask RCNN. A common learning framework with Python. The second module is built based on Unity3D and our own framework. The purpose of the second module is to sweep the profiles with a dynamic demo.
-
-If you have any questions, feel free to ask (chenxin2@shanghaitech.edu.cn). Please refer to the code scripts for second module: 
-```
-AutoSweep_ObjectSnapping/Assets/BodyEngine.cs
-AutoSweep_ObjectSnapping/Assets/FaceEngine.cs
-AutoSweep_ObjectSnapping/Assets/GraphicsEngine.cs
-``` -->
-
 ## Sports Motion Embedding Spaces
 With the annotated 2D poses and MoCap 3D pose data, we collect the Sports Motion Embedding Spaces (SMES), the 2D/3D pose priors for various sports. SMES provides strong prior and regularization to ensure that the generated pose result lies in the corresponding action space.
 <p float="left">
@@ -56,9 +47,9 @@ With the annotated 2D poses and MoCap 3D pose data, we collect the Sports Motion
 </p>
 
 ### Download
-You can download the Motion Embedding Spaces (SMES) (7 MB, version 1.0) separately from [GoogleDrive](https://drive.google.com/file/d/1gWyBxMUrImkWoz8YWIm_XrCsGpxovK0Q/view?usp=sharing). The released SMES-V1.0 includes many sports, like vault, unevenbar, boxing, diving, hurdles, poleVault, hightJump and so on.
+You can download the Motion Embedding Spaces (SMES) (7 MB, version 1.0) separately from [GoogleDrive](https://drive.google.com/file/d/1gWyBxMUrImkWoz8YWIm_XrCsGpxovK0Q/view?usp=sharing). The released SMES-V1.0 includes many sports, like vault, uneven bar, boxing, diving, hurdles, pole vault, high jump, and so on.
 
-### Useage
+### Usage
 Coming soon.
 
 ## Citation
