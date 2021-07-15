@@ -5,21 +5,13 @@
 
 This repository contains the official implementation for the paper: [SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Challenging Sports Videos (IJCV 2021)](https://arxiv.org/abs/2104.11452). Our work is capable of simultaneously capturing 3D human motions and understanding fine-grained actions from monocular challenging sports video input.<br>
 <p float="left">
-  <img src="./images/teaser.png" width="500" />
+  <img src="./README/teaser.png" width="600" />
 </p>
-<br>
-
-[comment]: <> (This is a comment, it will not be included)
-[comment]: <> (in  the output file unless you use it in)
-[comment]: <> (a reference style link.)
-[//]: <> (This is also a comment.)
-[//]: # (This may be the most platform independent comment)
 
 ## Abstract
 Markerless motion capture and understanding of professional non-daily human movements is an important yet unsolved task, which suffers from complex motion patterns and severe self-occlusion, especially for the monocular setting. In this paper, we propose SportsCap -- the first approach for simultaneously capturing 3D human motions and understanding fine-grained actions from monocular challenging sports video input. Our approach utilizes the semantic and temporally structured sub-motion prior in the embedding space for motion capture and understanding in a data-driven multi-task manner. Comprehensive experiments on both public and our proposed datasets show that with a challenging monocular sports video input, our novel approach not only significantly improves the accuracy of 3D human motion capture, but also recovers accurate fine-grained semantic action attributes.
 
 [comment]: <To enable robust capture under complex motion patterns, we propose an effective motion embedding module to recover both the implicit motion embedding and explicit 3D motion details via a corresponding mapping function as well as a sub-motion classifier. Based on such hybrid motion information, we introduce a multi-stream spatial-temporal Graph Convolutional Network(ST-GCN) to predict the fine-grained semantic action attributes, and adopt a semantic attribute mapping block to assemble various correlated action attributes into a high-level action label for the overall detailed understanding of the whole sequence, so as to enable various applications like action assessment or motion scoring.> 
-
 
 ## Licenses
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
@@ -30,17 +22,24 @@ All material is made available under [Creative Commons BY-NC-SA 4.0](https://cre
 SportsCap proposes a challenging sports dataset called Sports Motion and Recognition Tasks (SMART) dataset, which contains per-frame action labels, manually annotated pose and action assessment of various challenging sports video clips from professional referees.
 
 <p float="left">
-  <img src="./images/dataset.gif" width="500" />
+  <img src="./README/dataset.gif" width="600" />
 </p>
 
 ### Download
-You can download the SMART dataset (XX GB, version 1.0) from [GoogleDrive](https://drive.google.com/file/d/1O62Tp-2pPncuKD8oKbkP_WZJcbj-f_ik/view?usp=sharing).
+You can download the SMART dataset (17 GB, version 1.0) from Google Drive [[SMART_part01](https://github.com/ChenFengYe/SportsCap) | [SMART_part02](https://github.com/ChenFengYe/SportsCap)]. The SMART dataset includes source images (>60,000), annotations(>45,000, both pose and action), sport motion embedding spaces, videos (coming soon) and tools.
 
 ### Annotation
-Coming soon.
-
+Please load these json file in python to parse these annotations about 2D key-points of poses and fine-grained action labels.
+```
+Table_VideoInfo_diving.json
+Table_VideoInfo_gym.json
+Table_VideoInfo_polevalut_highjump_badminton.json
+```
 ### Tools
-Coming soon.
+The tools folder includes serveral functions to load the annotation and calculate the pose variables. More useful scripts are comming soon.
+```
+utils.py - json_load, crop_img_skes, cal_body_bbox ...
+```
 <!-- The code consists of two modules, as mentioned in our paper, the learning module (image to mask) and the graphics module (mask to 3d mesh). The first module follows the framework of FCIS and Mask RCNN. A common learning framework with Python. The second module is built based on Unity3D and our own framework. The purpose of the second module is to sweep the profiles with a dynamic demo.
 
 If you have any questions, feel free to ask (chenxin2@shanghaitech.edu.cn). Please refer to the code scripts for second module: 
@@ -53,11 +52,11 @@ AutoSweep_ObjectSnapping/Assets/GraphicsEngine.cs
 ## Sports Motion Embedding Spaces
 With the annotated 2D poses and MoCap 3D pose data, we collect the Sports Motion Embedding Spaces (SMES), the 2D/3D pose priors for various sports. SMES provides strong prior and regularization to ensure that the generated pose result lies in the corresponding action space.
 <p float="left">
-  <img src="./images/MES.png" width="500" />
+  <img src="./README/MES.png" width="600" />
 </p>
 
 ### Download
-You can download the Motion Embedding Spaces (SMES) (XX MB, version 1.0) separately from [GoogleDrive](https://drive.google.com/file/d/1O62Tp-2pPncuKD8oKbkP_WZJcbj-f_ik/view?usp=sharing). The released SMES-V1.0 includes xxx
+You can download the Motion Embedding Spaces (SMES) (7 MB, version 1.0) separately from [GoogleDrive](https://drive.google.com/file/d/1gWyBxMUrImkWoz8YWIm_XrCsGpxovK0Q/view?usp=sharing). The released SMES-V1.0 includes many sports, like vault, unevenbar, boxing, diving, hurdles, poleVault, hightJump and so on.
 
 ### Useage
 Coming soon.
