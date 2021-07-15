@@ -26,7 +26,7 @@ SportsCap proposes a challenging sports dataset called Sports Motion and Recogni
 </p>
 
 ### Download
-You can download the SMART dataset (17 GB, version 1.0) from Google Drive [[SMART_part01](https://github.com/ChenFengYe/SportsCap) | [SMART_part02](https://github.com/ChenFengYe/SportsCap)]. The SMART dataset includes source images (>60,000), annotations(>45,000, both pose and action), sport motion embedding spaces, videos (coming soon) and tools.
+You can download the SMART dataset (17 GB, version 1.0) from the Google Drive [[SMART_part01](https://drive.google.com/file/d/1hUlGglrlWdjZNFFQh2ck3UaMDL8sDwQv/view?usp=sharing) | [SMART_part02](https://drive.google.com/file/d/1NswiD-wpuAyHbSgdUCZ2s9QmVIFPcLjA/view?usp=sharing)]. The SMART dataset includes source images (>60,000), annotations(>45,000, both pose and action), sport motion embedding spaces, videos (coming soon) and tools.
 
 ### Annotation
 Please load these json file in python to parse these annotations about 2D key-points of poses and fine-grained action labels.
