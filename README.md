@@ -5,7 +5,7 @@
 
 This repository contains the official implementation for the paper: [SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Challenging Sports Videos (IJCV 2021)](https://arxiv.org/abs/2104.11452). Our work is capable of simultaneously capturing 3D human motions and understanding fine-grained actions from monocular challenging sports video input.<br>
 <p float="left">
-  <img src="./README/teaser.png" width="600" />
+  <img src="./README/teaser.png" width="800" />
 </p>
 
 ## Abstract
@@ -22,7 +22,7 @@ All material is made available under [Creative Commons BY-NC-SA 4.0](https://cre
 SportsCap proposes a challenging sports dataset called Sports Motion and Recognition Tasks (SMART) dataset, which contains per-frame action labels, manually annotated pose and action assessment of various challenging sports video clips from professional referees.
 
 <p float="left">
-  <img src="./README/dataset.gif" width="600" />
+  <img src="./README/dataset.gif" width="800" />
 </p>
 
 ### Download
@@ -52,7 +52,7 @@ AutoSweep_ObjectSnapping/Assets/GraphicsEngine.cs
 ## Sports Motion Embedding Spaces
 With the annotated 2D poses and MoCap 3D pose data, we collect the Sports Motion Embedding Spaces (SMES), the 2D/3D pose priors for various sports. SMES provides strong prior and regularization to ensure that the generated pose result lies in the corresponding action space.
 <p float="left">
-  <img src="./README/MES.png" width="600" />
+  <img src="./README/MES.png" width="800" />
 </p>
 
 ### Download
