@@ -1,5 +1,5 @@
 # SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Challenging Sports Videos
-### [ProjectPage](https://chenxin.tech/SportsCap.html) | [Paper](https://arxiv.org/abs/2104.11452) | [Video](https://chenxin.tech/files/Paper/IJCV2020_Sport/project_page_SportsCap/data/video.mp4) |  Dataset ([Part01](https://drive.google.com/file/d/1hUlGglrlWdjZNFFQh2ck3UaMDL8sDwQv/view?usp=sharing)|[Part02](https://drive.google.com/file/d/1NswiD-wpuAyHbSgdUCZ2s9QmVIFPcLjA/view?usp=sharing))
+### [ProjectPage](https://chenxin.tech/SportsCap.html) | [Paper](https://arxiv.org/abs/2104.11452) | [Video](https://www.youtube.com/watch?v=TrqAaaX97KY) |  Dataset ([Part01](https://drive.google.com/file/d/1hUlGglrlWdjZNFFQh2ck3UaMDL8sDwQv/view?usp=sharing)|[Part02](https://drive.google.com/file/d/1NswiD-wpuAyHbSgdUCZ2s9QmVIFPcLjA/view?usp=sharing))
 [Xin Chen](https://chenxin.tech/), Anqi Pang, [Wei Yang](https://scholar.google.com/citations?user=fRjxdPgAAAAJ&hl=en), [Yuexin Ma](http://yuexinma.me/aboutme.html), [Lan Xu](http://xu-lan.com/), [Kun Zhou](http://kunzhou.net/), [Jingyi Yu](http://www.yu-jingyi.com/).</br>
 
 
