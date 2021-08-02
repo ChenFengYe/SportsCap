@@ -67,7 +67,7 @@ If you find our code or paper useful, please consider citing:
 [**ChallenCap: Monocular 3D Capture of Challenging Human Performances using Multi-Modal References (CVPR Oral 2021)**](https://arxiv.org/abs/2103.06747)<br>
 Yannan He, Anqi Pang, Xin Chen, Han Liang, Minye Wu, Yuexin Ma, Lan Xu
 
-[**TightCap: 3D Human Shape Capture with Clothing Tightness Field (Submit to TOG 2021)**](https://chenxin.tech/TightCap.html)<br>
+[**TightCap: 3D Human Shape Capture with Clothing Tightness Field (TOG 2021)**](https://chenxin.tech/TightCap.html)<br>
 Xin Chen, Anqi Pang, Wei Yang, Peihao Wang, Lan Xu, Jingyi Yu
 
 [**AutoSweep: Recovering 3D Editable Objects from a Single Photograph (TVCG 2018)**](https://chenxin.tech/AutoSweep.html)<br>
