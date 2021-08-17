@@ -56,10 +56,12 @@ Coming soon.
 If you find our code or paper useful, please consider citing:
 ```
 @article{chen2021sportscap,
-  title={SportsCap: Monocular 3D Human Motion Capture and Fine-grained Understanding in Challenging Sports Videos},
-  author={Chen, Xin and Pang, Anqi and Yang, Wei and Ma, Yuexin and Xu, Lan and Yu, Jingyi},
-  journal={arXiv preprint arXiv:2104.11452},
-  year={2021}
+  title={SportsCap: Monocular 3D Human Motion Capture and Fine-Grained Understanding in Challenging Sports Videos},
+  author={Xin Chen and Anqi Pang and Wei Yang and Yuexin Ma and Lan Xu and Jingyi Yu},
+  journal={International Journal of Computer Vision},
+  year={2021},
+  month={Aug},
+  url={https://doi.org/10.1007/s11263-021-01486-4}
 }
 ```
 
